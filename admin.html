@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gas Saver</title>
+    <link rel="stylesheet" type="text/css" href="./admin.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<h1>   Gas Saving Calculator  </h1>
+<div>
+
+
+    <form id="form1">
+        Credit Card Price: <input name="creditPrice" type="number" oninput="setTwoNumberDecimal" min="0" max="10">
+    </form>
+
+    <form id="form2">
+        Cashback Percentage: <input name="cashBack" type="number">
+    </form>
+
+    <form id="form3">
+        Cash Price: <input name="cashPrice" type="number">
+    </form>
+
+    <form id="form4">
+        Number of Gallons:<input name="gallons" type="number">
+    </form>
+<div> <center>
+    <button onclick="analyze()">Submit</button> </center>
+</div>
+    <div id="result-div" class="center">
+    </div>
+
+</div>
+
+<script src="./admin.js"></script>
+
+</body>
+</html>
